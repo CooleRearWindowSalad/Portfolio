@@ -1,8 +1,7 @@
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { ROUTES } from '../../shared/constants/routes';
 
 export default function Sidebar() {
-  const navigate = useNavigate();
   return (
     <aside className="sidebar">
       <ul>
