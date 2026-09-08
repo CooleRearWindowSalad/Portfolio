@@ -1,62 +1,38 @@
-import Button from '../../components/ui/Button';
+import { Link } from 'react-router-dom';
 import PageLayout from '../../app/routes';
-import { User } from '../../domain/entities/User';
-import { UserRepository } from '../../domain/repositories/UserRepository';
-import { UserId } from '../../domain/value-objects/UserId';
-import { tokenService } from '../../infrastructure/auth/TokenService';
-import { storage } from '../../infrastructure/storage/storage';
-import { AUTH_CONFIG, AUTH_STATUS } from '../../shared/types';
+import Button from '../../components/ui/Button';
 import { ROUTES } from '../../shared/constants/routes';
-import { formatDate, formatName } from '../../shared/utils/format';
-import { useNavigate } from 'react-router-dom';
-import { useAuth } from '../../shared/hooks/useAuth';
 
 export default function HomePage() {
-  const navigate = useNavigate();
-  const { status, user } = useAuth();
-
-  const repository = new UserRepository();
-  const userId = new UserId(User.id);
-  const storedUser = storage.get('app-user') || user;
-  const token = tokenService.getToken();
-  const activeStatus = status || AUTH_STATUS.GUEST;
-
   return (
     <PageLayout>
-      <div className="card">
-        <h1>Home</h1>
-        <p>Welcome to the dashboard starter. This page demonstrates the app shell and the reused domain, infrastructure, and shared utilities.</p>
-
-        <div className="home-grid">
-          <div>
-            <strong>Current user:</strong> {formatName(storedUser?.name || User.name || AUTH_CONFIG.defaultUserName)}
-          </div>
-          <div>
-            <strong>User ID:</strong> {storedUser?.userId || userId.value}
-          </div>
-          <div>
-            <strong>Status:</strong> {activeStatus}
-          </div>
-          <div>
-            <strong>Token:</strong> {token || 'not available'}
-          </div>
-          <div>
-            <strong>Registered users:</strong> {repository.getAll().length}
-          </div>
-          <div>
-            <strong>Today:</strong> {formatDate(new Date())}
-          </div>
-        </div>
-
+      <section className="hero card">
+        <p className="hero-kicker">Frontend Developer</p>
+        <h1>Hi, I am Rosa.</h1>
+        <p className="hero-text">
+          I build modern, fast, and user-friendly web applications with React. This portfolio showcases
+          who I am, what I build, and how I can help your team.
+        </p>
         <div className="home-actions">
-          <Button onClick={() => navigate(ROUTES.AUTH)}>
-            {storedUser ? 'Go to login' : 'Login'}
-          </Button>
-          <Button variant="secondary" onClick={() => navigate(ROUTES.DASHBOARD)}>
-            Open dashboard
-          </Button>
+          <Link to={ROUTES.PROJECTS}><Button>View projects</Button></Link>
+          <Link to={ROUTES.CONTACT}><Button variant="secondary">Contact me</Button></Link>
         </div>
-      </div>
+      </section>
+
+      <section className="home-grid">
+        <div>
+          <h3>Clean UI</h3>
+          <p>Interfaces focused on clarity, accessibility, and conversion.</p>
+        </div>
+        <div>
+          <h3>React expertise</h3>
+          <p>Reusable components, routing, state management, and performance.</p>
+        </div>
+        <div>
+          <h3>Reliable delivery</h3>
+          <p>Structured workflow from idea to production-ready result.</p>
+        </div>
+      </section>
     </PageLayout>
   );
 }
