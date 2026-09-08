@@ -114,6 +114,52 @@ main {
   color: white;
 }
 
+.button--secondary {
+  background: #e5e7eb;
+  color: #111827;
+}
+
+.button:disabled {
+  cursor: wait;
+  opacity: 0.7;
+}
+
+.logout-button {
+  background: transparent;
+  border: none;
+  color: white;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  text-align: left;
+}
+
 .error {
   color: #b91c1c;
+}
+
+.helper-text {
+  margin: 0;
+  color: #4b5563;
+  font-size: 0.9rem;
+}
+
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.home-grid > div {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 0.9rem 1rem;
+}
+
+.home-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
 }

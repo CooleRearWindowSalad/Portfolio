@@ -1,5 +1,7 @@
-﻿export class UserRepository {
+﻿import { User } from '../entities/User';
+
+export class UserRepository {
   getAll() {
-    return [];
+    return [User];
   }
 }
