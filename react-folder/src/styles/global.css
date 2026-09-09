@@ -18,7 +18,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background: #1f2937;
+  background: #5e4eac;
   color: white;
 }
 
@@ -43,8 +43,8 @@
 }
 
 .sidebar {
-  width: 220px;
-  background: #111827;
+  width: 210px;
+  background: #392f63;
   color: white;
   padding: 1.5rem;
 }
@@ -135,4 +135,13 @@ main {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background: #5e4eac;
+  color: white;
 }

@@ -1,6 +1,6 @@
 import Header from '../../components/layout/Header';
 import Sidebar from '../../components/layout/Sidebar';
-
+import Footer from '../../components/layout/Footer';
 export default function PageLayout({ children }) {
   return (
     <div className="page-shell">
@@ -9,6 +9,7 @@ export default function PageLayout({ children }) {
         <Sidebar />
         <main>{children}</main>
       </div>
+      <Footer />
     </div>
   );
 }
