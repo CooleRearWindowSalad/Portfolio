@@ -7,8 +7,9 @@ export default function ContactPage() {
         <h1>Contact</h1>
         <p>Interested in working together? Reach out through the details below.</p>
         <div className="contact-list">
-          <p><strong>Email:</strong> name@example.com</p>
-          <p><strong>GitHub:</strong> github.com/your-username</p>
+          <p><strong>Email:</strong> under maintenance</p>
+          <p><strong>GitHub:</strong> <a href="https://github.com/CooleRearWindowSalad" target="_blank" rel="noreferrer">CooleRearWindowSalad</a></p>
+          <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/rosa-safai" target="_blank" rel="noreferrer">Rosa Safai</a></p>
         </div>
       </div>
     </PageLayout>
