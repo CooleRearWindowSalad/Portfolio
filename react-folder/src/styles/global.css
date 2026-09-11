@@ -1,8 +1,6 @@
 ﻿body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #f3f4f6;
-  color: #111827;
 }
 
 * {
@@ -67,12 +65,9 @@ main {
   background: white;
   border-radius: 12px;
   padding: 2rem;
+  border: #111827  1px solid;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
-
-
-
-
 
 .button {
   border: none;
@@ -126,8 +121,8 @@ main {
 
 .home-grid > div {
   background: #f9fafb;
-  border: 1px solid #e5e7eb;
-  border-radius: 8px;
+  border: #111827  1px solid;
+  border-radius: 12px;
   padding: 0.9rem 1rem;
 }
 
@@ -135,6 +130,19 @@ main {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.hero-image {
+  border: 1px solid #111827;
+  width: 220px;
+  height: 220px;
+  border-radius: 12px;
 }
 
 .footer {

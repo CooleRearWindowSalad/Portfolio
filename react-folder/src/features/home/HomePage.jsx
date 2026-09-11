@@ -2,20 +2,24 @@ import { Link } from 'react-router-dom';
 import PageLayout from '../../app/routes';
 import Button from '../../components/ui/Button';
 import { ROUTES } from '../../shared/constants/routes';
+import profileImage from '../../images/profile-picture.jpg';
 
 export default function HomePage() {
   return (
     <PageLayout>
       <section className="hero card">
-        <p className="hero-kicker">Frontend Developer</p>
-        <h1>Hi, I am Rosa.</h1>
-        <p className="hero-text">
-          I build modern, fast, and user-friendly web applications with React. This portfolio showcases
-          who I am, what I build, and how I can help your team.
-        </p>
-        <div className="home-actions">
-          <Link to={ROUTES.PROJECTS}><Button>View projects</Button></Link>
-          <Link to={ROUTES.CONTACT}><Button variant="secondary">Contact me</Button></Link>
+        <img className="hero-image" alt="Rosa" src={profileImage} />
+        <div className="hero-content">
+          <p className="hero-kicker">Software Developer</p>
+          <h1>Hi, I am Rosa!</h1>
+          <p className="hero-text">
+            I'm a third year Computer Science student at Amsterdam University of Applied Sciences (AUAS/HvA) and I build
+            web applications. This portfolio showcases who I am and what I build.
+          </p>
+          <div className="home-actions">
+            <Link to={ROUTES.PROJECTS}><Button>View projects</Button></Link>
+            <Link to={ROUTES.CONTACT}><Button variant="secondary">Contact me</Button></Link>
+          </div>
         </div>
       </section>
 
