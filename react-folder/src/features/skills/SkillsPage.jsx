@@ -1,15 +1,7 @@
 import PageLayout from '../../app/routes';
+import portfolioData from '../../data/portfolio.json';
 
-const skills = [
-  'React',
-  'JavaScript (ES6+)',
-  'HTML5',
-  'CSS3',
-  'Responsive Design',
-  'Git & GitHub',
-  'REST APIs',
-  'UI/UX Basics'
-];
+const { skills } = portfolioData;
 
 export default function SkillsPage() {
   return (

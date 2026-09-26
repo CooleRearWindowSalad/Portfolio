@@ -1,22 +1,7 @@
 import PageLayout from '../../app/routes';
+import portfolioData from '../../data/portfolio.json';
 
-const projects = [
-  {
-    title: 'E-commerce Frontend',
-    description: 'React storefront with product filtering, cart flow, and checkout UI.',
-    stack: 'React, React Router, CSS'
-  },
-  {
-    title: 'Company Landing Page',
-    description: 'Conversion-focused marketing page with animations and strong CTA structure.',
-    stack: 'React, Vite, Responsive Design'
-  },
-  {
-    title: 'Dashboard UI',
-    description: 'Data-driven admin interface with reusable charts, cards, and tables.',
-    stack: 'React, Component Architecture'
-  }
-];
+const { projects } = portfolioData;
 
 export default function ProjectsPage() {
   return (
