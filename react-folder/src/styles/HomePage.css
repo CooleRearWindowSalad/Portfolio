@@ -1,0 +1,40 @@
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.hero-image {
+    border: 1px solid #111827;
+    width: 220px;
+    height: 220px;
+    border-radius: 12px;
+}
+
+.home-actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.home-grid > div {
+    background: #f9fafb;
+    border: #111827 1px solid;
+    border-radius: 12px;
+    padding: 0.9rem 1rem;
+}
+
+.hero-contents {
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5rem 0;
+}
