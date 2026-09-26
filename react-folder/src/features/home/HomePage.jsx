@@ -23,18 +23,26 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section className="hero-contents">
+          <p>Potential employers can expect the following from me:</p>
+      </section>
+
       <section className="home-grid">
         <div>
-          <h3>Clean UI</h3>
-          <p>Interfaces focused on clarity, accessibility, and conversion.</p>
-        </div>
-        <div>
-          <h3>React expertise</h3>
-          <p>Reusable components, routing, state management, and performance.</p>
+          <h3>Creative</h3>
+          <p>Modern problems require creative solutions.</p>
         </div>
         <div>
           <h3>Reliable delivery</h3>
-          <p>Structured workflow from idea to production-ready result.</p>
+          <p>Dependable performance in delivering asked-for results.</p>
+        </div>
+        <div>
+          <h3>Result-oriented</h3>
+          <p>Focus on achieving desired outcomes.</p>
+        </div>
+        <div>
+          <h3>Adaptable</h3>
+          <p>Ability to adjust to new situations and changing requirements.</p>
         </div>
       </section>
     </PageLayout>
