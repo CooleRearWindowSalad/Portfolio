@@ -1,14 +1,28 @@
 {
-  "skills": [
-    "React",
-    "JavaScript (ES6+)",
-    "HTML5",
-    "CSS3",
-    "Responsive Design",
-    "Git & GitHub",
-    "REST APIs",
-    "UI/UX Basics"
-  ],
+  "skills": {
+    "Frontend development": [
+      "HTML5",
+      "CSS3",
+      "JavaScript (ES6+)",
+      "Blazor",
+      "REST API's"
+    ],
+    "Programming languages": [
+      "C#",
+      "Java"
+    ],
+    "Tools & collaboration": [
+      "Git",
+      "GitHub",
+      "Azure DevOps",
+      "Postman/Insomnia"
+    ],
+    "Design": [
+      "Adobe Photoshop",
+      "Adobe Illustrator",
+      "Figma"
+    ]
+  },
   "projects": [
     {
       "title": "E-commerce Frontend",

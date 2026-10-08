@@ -12,7 +12,6 @@ export default function Header() {
       <nav className="nav">
         <Link to={ROUTES.ABOUT}>About</Link>
         <Link to={ROUTES.PROJECTS}>Projects</Link>
-        <Link to={ROUTES.SKILLS}>Skills</Link>
         <Link to={ROUTES.CONTACT}>Contact</Link>
       </nav>
     </header>
