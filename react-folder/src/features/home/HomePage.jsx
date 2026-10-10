@@ -17,8 +17,8 @@ export default function HomePage() {
             web applications. This portfolio showcases who I am and what I build.
           </p>
           <div className="home-actions">
-            <Link to={ROUTES.PROJECTS}><Button>View projects</Button></Link>
-            <Link to={ROUTES.CONTACT}><Button variant="secondary">Contact me</Button></Link>
+            <Link to={ROUTES.ABOUT}><Button>About me</Button></Link>
+            <Link to={ROUTES.PROJECTS}><Button variant="secondary">View projects</Button></Link>
           </div>
         </div>
       </section>
