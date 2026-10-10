@@ -10,7 +10,7 @@ export default function HomePage() {
       <section className="hero card">
         <img className="hero-image" alt="Rosa" src={profileImage} />
         <div className="hero-content">
-          <p className="hero-kicker">Software Developer</p>
+          <p className="hero-kicker">Software developer</p>
           <h1>Hi, I am Rosa!</h1>
           <p className="hero-text">
             I'm a third year Computer Science student at Amsterdam University of Applied Sciences (AUAS/HvA) and I build
@@ -21,10 +21,6 @@ export default function HomePage() {
             <Link to={ROUTES.CONTACT}><Button variant="secondary">Contact me</Button></Link>
           </div>
         </div>
-      </section>
-
-      <section className="hero-contents">
-          <p>Potential employers can expect the following from me:</p>
       </section>
 
       <section className="home-grid">

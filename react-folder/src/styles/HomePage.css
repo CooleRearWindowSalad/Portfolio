@@ -1,6 +1,7 @@
 .hero {
     display: flex;
     align-items: center;
+    background: #b6aed6;
     gap: 2rem;
 }
 
@@ -25,16 +26,8 @@
 }
 
 .home-grid > div {
-    background: #f9fafb;
+    background: #fbf6fd;
     border: #111827 1px solid;
     border-radius: 12px;
     padding: 0.9rem 1rem;
-}
-
-.hero-contents {
-    color: #000000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 1.5rem 0;
 }
