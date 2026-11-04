@@ -4,6 +4,7 @@ import {BrowserRouter} from 'react-router-dom';
 import App from './App';
 import {AppProvider} from './app/providers/AppProvider';
 import './styles/global.css';
+import './styles/AboutPage.css';
 import './styles/HomePage.css';
 import './styles/ProjectsPage.css';
 

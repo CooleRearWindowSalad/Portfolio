@@ -1,0 +1,90 @@
+.about-page {
+    display: grid;
+    gap: 1.5rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.about-intro {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    align-items: center;
+    gap: 2rem;
+    background: #b6aed6;
+}
+
+.about-image {
+    width: 220px;
+    height: 220px;
+    border: 1px solid #111827;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.about-kicker {
+    margin: 0 0 0.5rem;
+    color: #5e4eac;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.about-intro h1 {
+    max-width: 650px;
+    margin: 0 0 1rem;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    line-height: 1.05;
+}
+
+.about-intro p:not(.about-kicker),
+.about-panel p,
+.about-focus > p {
+    line-height: 1.7;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.about-panel {
+    padding: 1.5rem;
+    background: #fbf6fd;
+    border: 1px solid #111827;
+    border-radius: 12px;
+}
+
+.about-panel h2,
+.about-focus h2 {
+    margin: 0 0 0.5rem;
+}
+
+.about-panel p {
+    margin-bottom: 0;
+}
+
+.about-focus {
+    display: grid;
+    grid-template-columns: minmax(180px, 0.7fr) 1.3fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.about-focus > p {
+    margin: 0;
+}
+
+@media (max-width: 650px) {
+    .about-intro,
+    .about-grid,
+    .about-focus {
+        grid-template-columns: 1fr;
+    }
+
+    .about-image {
+        width: 150px;
+        height: 150px;
+    }
+}

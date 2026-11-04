@@ -1,4 +1,31 @@
 {
+  "about": {
+    "imageAlt": "Rosa",
+    "intro": {
+      "kicker": "A little bit about me",
+      "title": "Curious, creative, and always learning.",
+      "paragraphs": [
+        "I am a third-year Computer Science student at Amsterdam University of Applied Sciences (AUAS/HvA) and a developer who enjoys turning ideas into useful web experiences.",
+        "I like working on the details that make a product feel right: clear layouts and code that is easy to understand and build on."
+      ]
+    },
+    "highlightsLabel": "More about Rosa",
+    "highlights": [
+      {
+        "title": "Outside of coding",
+        "text": "In my free time, I enjoy playing games and programming. Games are a way for me to relax, but they also inspire my interest in design, problem-solving, and the way people interact with technology."
+      },
+      {
+        "title": "What motivates me",
+        "text": "I enjoy learning tools, exploring creative ideas, and improving through every project. Whether I am building a page from scratch or polishing a small detail, I care about making the end result feel useful."
+      }
+    ],
+    "focus": {
+      "kicker": "My approach",
+      "title": "Building with purpose",
+      "text": "I combine technical quality with design awareness. My goal is to create responsive, accessible interfaces that are reliable for the people using them and enjoyable to develop."
+    }
+  },
   "skills": {
     "Frontend development": [
       "HTML5",
@@ -25,19 +52,14 @@
   },
   "projects": [
     {
-      "title": "E-commerce Frontend",
-      "description": "React storefront with product filtering, cart flow, and checkout UI.",
-      "stack": "React, React Router, CSS"
+      "title": "Shared Fridge",
+      "description": "Simple webgeme about secrectly using your roommate's food without getting caught.",
+      "stack": "C#, Blazor WebAssembly, CSS"
     },
     {
-      "title": "Company Landing Page",
-      "description": "Conversion-focused marketing page with animations and strong CTA structure.",
-      "stack": "React, Vite, Responsive Design"
-    },
-    {
-      "title": "Dashboard UI",
-      "description": "Data-driven admin interface with reusable charts, cards, and tables.",
-      "stack": "React, Component Architecture"
+      "title": "Dokkie",
+      "description": "Website where you can divide the costs between people who you did an activity with.",
+      "stack": "HTML, CSS, Javascript"
     }
   ]
 }
